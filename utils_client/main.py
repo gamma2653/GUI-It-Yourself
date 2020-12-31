@@ -17,8 +17,10 @@ def main():
     def_modules = ['default_options.options']
     # def_modules = Option.build_dict([SimpleOption('example', lambda: print)])
 
-
+    # Create the gui, pass arguments so it can construct buttons
     gui = get_app(*(args.modules+def_modules))
+
+    # Run it.
     gui.mainloop()
 
 
